@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(219, 219, 35);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    flex-grow: 1;
+  }
+
+  header {
+    width: 100%; /* Full width of the viewport */
+    height: 500px; /* Fixed height for larger screens */
+    position: relative;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+  }
+
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Ensures video covers without stretching */
+    z-index: -1; /* Places video behind other elements */
+  }
+
+  .title {
+    margin: 0;
+    text-align: center;
+    padding-top: 250px; /* Vertical centering */
+    font-size: 1.5rem; /* Smaller font size */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for readability */
+  }
+
+  /* Updated Navbar - Further Reduced Width */
+  nav {
+    display: flex;
+    align-items:center; /* Align links to the start (left) */
+    justify-content: center; /* Ensure items are at the top */
+    font-size: 1rem; /* Smaller font size for better readability */
+    height: 6rem; /* Full height of the viewport */
+    background-color: rgb(219, 219, 35);
+  }
+
+  nav a {
+    color: black;
+    font-size: 1rem; /* Smaller font size for links */
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0; /* Vertical spacing between links */
+    align-items: center;
+  }
+
+  nav a:hover {
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(219, 219, 35);
+    transition: 0.5s;
+    cursor: pointer;
+    height: 30px;
+   
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row; /* Change to row so heading, paragraph, and image align horizontally */
+    align-items: flex-start; /* Align items at the start of the container */
+    margin-top: 200px;
+    margin-left: 20px;
+    margin-bottom: 250px;
+    padding-right: 100px;
+    border: solid 10px rgb(219, 219, 35);
+    border-top: none;
+    border-bottom: none;
+    background-color: rgba(14, 11, 11, 0.984);
+  }
+
+  
+
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-right: 150px;
+    margin-top: 100px;
+    margin-left: 20px;
+    
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .main-prgph {
+    font-size: 18pt;
+    margin-top: 40px;
+  }
+
+  .halloween {
+
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .cos-play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color: rgb(219, 219, 35);
+    padding-bottom: 10px;
+    border-radius: 20px;
+  }
+
+  .cos-hdng {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .cos-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 300px;
+  }
+
+
+  .sinag-img {
+    height: auto; /* Ensures the container height adjusts to the content */
+    width: 100%;  /* Adjusts the width to fill the container or specify a custom width */
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .sinag-hdr {
+    font-size: 3rem;
+    margin-top: 500px;
+    margin-bottom: 10px;
+  }
+
+  .sinag {
+    margin-left: 40px;
+  }
+
+  .sinag-pgph {
+    font-size: 16pt;
+    margin-bottom: 50px;
+  }
+
+  .sinag-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;  /* Aligns the columns next to each other */
+    width: 100%;
+    gap: 0;  /* No gap between columns */
+}
+
+.column1-sinag, .column2-sinag {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;  /* Adjusted to 50% for better balance */
+    margin: 0;  /* Remove any extra margin */
+}
+
+.column1-sinag img, .column2-sinag img {
+    width: 50%;  /* Make images fill the full width of the column */
+    height: 200px; /* Adjust the image height */
+    object-fit: cover; /* Ensures the images fill the space without distortion */
+    margin-bottom: 20px;  /* Small gap between images in each column */
+    border-radius: 20px;
+}
+
+/* Optional: To ensure there's no margin below the last image in each column */
+.column1-sinag img:last-child, .column2-sinag img:last-child {
+    margin-bottom: 0;
+}
+
+#pre-christmas {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
+  text-align: center; /* Align text in the center */
+  padding: 50px 20px; /* Add spacing inside the section */
+  min-height: 100vh; /* Make the section take the full viewport height */
+}
+
+.Christmas-text {
+  margin-bottom: 20px; /* Space between text and images */
+}
+
+.chms-hdn {
+  font-size: 2.5rem; /* Adjust heading size */
+  margin-bottom: 10px;
+}
+
+.chms-pgph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.pre-img {
+  display: flex;
+  flex-wrap: wrap; /* Allows images to wrap on small screens */
+  justify-content: center; /* Center images horizontally */
+  gap: 15px; /* Add space between images */
+}
+
+.image-container {
+  flex: 1 1 150px; /* Responsive sizing */
+  max-width: 200px;
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto;
+  display: block; /* Remove unwanted spacing under the image */
+}
+
+.image-container:hover {
+  transform: scale(3); /* Slight zoom-in effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.chms-pgph2 {
+  margin-top: 30px;
+  font-size: 14pt;
+  line-height: 30px;
+  text-indent: 50px;
+}
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  border: none;
+  background-color: #281f1f62;
+}
+
+.lessons-text {
+  margin-top: 50px;
+}
+
+.video-container {
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  margin-left: 500px;
+justify-items: end;
+}
+
+
+  /* Responsive Media Queries */
+
+  /* For devices with a width of 768px or less (tablets and small desktops) */
+  @media screen and (max-width: 768px) {
+    header {
+      height: 400px; /* Reduce header height */
+    }
+
+    .title {
+      padding-top: 150px; /* Adjust vertical centering */
+      font-size: 1.3rem; /* Smaller font size for tablets */
+    }
+
+    nav {
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    nav a {
+      font-size: 0.9rem; /* Adjust link font size */
+      margin: 0 12px; /* Increase spacing between links for wider gap */
+    }
+
+    .content {
+      margin-left: 150px; /* Adjust padding for smaller screens */
+    }
+  }
+
+  /* For devices with a width of 480px or less (mobiles) */
+  @media screen and (max-width: 480px) {
+    header {
+      height: 300px; /* Reduce header height further */
+    }
+
+    .title {
+      padding-top: 100px; /* Adjust vertical centering */
+      font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    nav {
+      height: auto; /* Auto height for navbar */
+      font-size: 0.8rem; /* Smaller font size */
+    }
+
+    nav a {
+      font-size: 0.8rem; /* Adjust link font size */
+      margin: 0 10px; /* Increase spacing between links for wider gap */
+    }
+
+    .content {
+      margin-left: 120px; /* Further adjust padding for mobile */
+    }
+  }
+
+  /* For larger screens (desktops and large devices) */
+  @media screen and (min-width: 1024px) {
+    header {
+      height: 600px; /* Increase header height for large screens */
+    }
+
+    .title {
+      padding-top: 300px; /* Adjust vertical centering */
+      font-size: 2rem; /* Moderate font size */
+    }
+
+    nav {
+      font-size: 1.2rem; /* Moderate font size */
+    }
+
+    nav a {
+      font-size: 1.1rem; /* Slightly larger link font size */
+      margin: 0 40px; /* Increased gap between links for larger spacing */
+    }
+
+    .content {
+      margin-left: 150px; /* Adjust content padding for larger screens */
+    }
+  }
